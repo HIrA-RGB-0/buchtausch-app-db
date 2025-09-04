@@ -1,26 +1,29 @@
 # Buchtausch-App – Datenbankprojekt (IU14119299)
 
 ## Überblick
-Dieses Projekt entstand im Rahmen des Moduls „Datenbankdesign“. 
+Dieses Projekt entstand im Rahmen des Moduls „DLBDSIDS01_D“. 
 Es bildet die Kernprozesse einer Buchtauschplattform in einer relationalen Datenbank ab.
+
+**Funktionen:**
+- Benutzerverwaltung (Registrierung, Rollen, Status)
+- Verwaltung von Werken & Exemplaren
+- Ausleihe & Reservierung
+- Bewertungen & Kommentare
+- Kommunikation über Chats & Support-Tickets
+- **Geo-Suche**: Finde verfügbare Exemplare in der Nähe
 
 **Phasen:**
 - **Phase 1:** Konzeption (Anforderungsspezifikation, ER-Modell, Datenwörterbuch)
-- **Phase 2:** Umsetzung (21 Tabellen, Dummy-Daten, Testabfragen)
-- **Phase 3:** Finalisierung (Optimierungen, Geo-Suche, Abgabe)
+- **Phase 2:** Umsetzung (21 Tabellen, Dummy-Daten, Testabfragen, Dokumentation)
+- **Phase 3:** Finalisierung (Optimierungen, Geo-Suche, PDF Dokument zur Funktionalität des Datenbankmanagementsystems, Metadaten, Abstract, Abgabe)
 
 ## Installation
-1. MariaDB/MySQL starten.
-2. SQL-Skripte in folgender Reihenfolge ausführen:
-   - `sql/00_create.sql`
-   - `sql/01_insert.sql`
-   - `sql/02_geo.sql`
-   - optional: `sql/03_geo_test.sql`
+ Siehe [INSTALL.md](INSTALL.md) für die detaillierte Installationsanleitung.
 
 ## Inhalte
-- `/sql/` – alle SQL-Dateien (Schema, Inserts, Geo, Tests)
-- `/docs/` – Dokumente (Phase 1–3, Abstract, ER-Diagramm)
-- `/screenshots/` – Screenshots (Geo-Test, Metadaten, Testabfragen)
+- `/01_Konzeptionsphase/` – Anforderungsanalyse, ER Model, Datenwörterbuch)
+- `/02_Erarbeitungs-Reflexionsphase/` – SQL Dokumente (Version Phase 2), Screenshots_Testfälle, Dokumentation 
+- `/03_Finalisierungsphase/` – alle_Screenshots (Geo-Test, Metadaten, Testabfragen), SQL Dokumente (Finalversionen), PDF Dokument Funktionalität Datenbankmanagementsystems, Metadaten, Abstract
 - `README.md` – Projektübersicht
 - `INSTALL.md` – detaillierte Installationsanleitung
 
